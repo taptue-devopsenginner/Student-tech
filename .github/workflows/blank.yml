@@ -3,10 +3,11 @@ name: flow-deco
 on: push
 
 jobs:
-    my-first-job:
+    my_first_job:
        runs-on: ubuntu-latest
        steps:
        - name: gitcheckout
+         uses: actions/checkout@v6
          run: echo "hello world"
             sudo apt update -y
             sudo cat /etc/passwd
