@@ -7,11 +7,11 @@ jobs:
        runs-on: ubuntu-latest
        steps:
        - name: gitcheckout
-       run: echo "hello world"
+         run: echo "hello world"
             sudo apt update -y
             sudo cat /etc/passwd
 
-        - name: user-creation
+        - name: user creation
           run: sudo useradd franck
 
         - name: file creation
