@@ -1,0 +1,26 @@
+name: flow-deco
+
+on: push
+
+jobs:
+    my-first-job:
+       runs-on: ubuntu-latest
+       steps:
+       - name: gitcheckout
+       run: echo "hello world"
+            sudo apt update -y
+            sudo cat /etc/passwd
+
+        - name: user-creation
+          run: sudo useradd franck
+
+        - name: file creation
+          run: touch file1
+        - name: folder creation
+          run: mkdir devops
+        - name: print working directory
+          run: pwd
+          
+          
+            
+      
