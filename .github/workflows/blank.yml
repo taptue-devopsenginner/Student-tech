@@ -12,15 +12,15 @@ jobs:
             sudo apt update -y
             sudo cat /etc/passwd
 
-        - name: user creation
-          run: sudo useradd franck
+       - name: user creation
+         run: sudo useradd franck
 
-        - name: file creation
-          run: touch file1
-        - name: folder creation
-          run: mkdir devops
-        - name: print working directory
-          run: pwd
+       - name: file creation
+         run: touch file1
+       - name: folder creation
+         run: mkdir devops
+       - name: print working directory
+         run: pwd
           
           
             
